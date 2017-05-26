@@ -18,6 +18,6 @@ writing
 
 ## TODO LIST
 
-1.压力与性能测试
-2.增加对mmap的支持
-3.makefile
+1. 压力与性能测试
+2. 增加对mmap的支持
+3. makefile
