@@ -16,7 +16,6 @@ SimpleMalloc 是一个具有多层次缓存的内存分配器。
 block 是用户可以获取并自由访问的内存区域。block的大小总是8字节的整数倍。
 
 pool 是block的集合，相当于block的容器，每一个pool的尺寸是4k字节，即为一个内存页的大小，这可以加速系统级内存分配。
-
 此外每一个pool的起始地址一定是pool尺寸的整数倍。这样有助于通过block的地址迅速定位block所在的pool。
 
 最后pond 的大小是256k字节，作为pool的容器，每个pond 包含了 63个pool，这是因为pond_header 和pool内存对齐的影响。
