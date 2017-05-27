@@ -27,7 +27,48 @@ pool 是block的集合，相当于block的容器，每一个pool的尺寸是4k�
 
 ## 使用教程
 
-writing
+### 编译
+
+
+```
+cd YourPath/SimpleMalloc
+make
+
+```
+
+得到静态库 **libsmpmalloc.a**。
+
+
+### 使用
+
+
+```
+#include "simple_malloc.h"
+
+int main()
+{
+    simple_install(); //初始化全局数据结构
+    
+    //申请内存
+    void * p = simple_malloc(11); 
+    
+    // 更改内存大小
+    void * newp= simple_realloc(p, 12);
+    
+    //释放内存
+    simple_free(p);
+    simple_uninstall(); //释放全局数据结构内存
+}
+```
+
+### 测试
+
+```
+cd YourPath/SimpleMalloc/SimpleMallocTest
+make
+./test
+```
+测试内容见 **SimpleMallocTest/test.c**
 
 ## TODO LIST
 
