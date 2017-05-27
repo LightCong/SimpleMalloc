@@ -3,7 +3,7 @@
 //  SimpleSTL
 //
 //  Created by dacuobi on 17/5/26.
-//  Copyright © 2017年 dacuobi. All rights reserved.
+
 //
 
 #ifndef simple_malloc_internal_h

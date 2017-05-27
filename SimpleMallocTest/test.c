@@ -3,7 +3,7 @@
 //  SimpleSTL
 //
 //  Created by dacuobi on 17/5/26.
-//  Copyright © 2017年 dacuobi. All rights reserved.
+
 //
 #include <stdio.h>
 #include <stdlib.h>
@@ -71,6 +71,8 @@ void test_macros()
     pond->end_addr=(void*)((unsigned long)pond+sizeof(PondHeader)+3*POOL_SIZE);
     assert(get_pool_max_count(pond)==2);
     
+    printf("test_macros success!!\n");
+    
 }
 
 void test_pond()
@@ -97,6 +99,9 @@ void test_pond()
     assert(count==get_pool_max_count(pond_lst));
     assert(pool_cache==pond_lst->start_pool);
     simple_uninstall();
+    
+    printf("test_pond success!!\n");
+
 }
 
 void test_pool()
@@ -118,6 +123,8 @@ void test_pool()
     count=check_pool_num();
     assert(count==POND_SIZE/POOL_SIZE-1);
     simple_uninstall();
+    
+    printf("test_pool success!!\n");
 }
 
 void test_find_pool()
@@ -149,6 +156,8 @@ void test_find_pool()
     assert(new_pool==mem_index_arr[2].available_pool);
 
     simple_uninstall();
+    
+    printf("test_find_pool success!!\n");
 }
 
 
@@ -175,6 +184,8 @@ void test_block()
     assert(b3->next_free_ptr==b2);
 
     simple_uninstall();
+    
+    printf("test_block success!!\n");
 }
 
 void test_interface()
@@ -186,6 +197,8 @@ void test_interface()
     assert(p==newp);
     simple_free(p);
     simple_uninstall();
+    
+    printf("test_interface success!!\n");
     
 }
 

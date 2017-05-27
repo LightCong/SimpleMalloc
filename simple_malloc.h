@@ -3,16 +3,13 @@
 //  SimpleSTL
 //
 //  Created by LightCong on 17/5/22.
-//  Copyright © 2017年 dacuobi. All rights reserved.
-//
+//aaa
 
 #ifndef simple_malloc_h
 #define simple_malloc_h
 
 #define TRUE 1
 #define FALSE 0
-
-
 
 void simple_install();
 void simple_uninstall();

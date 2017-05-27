@@ -3,7 +3,6 @@
 //  SimpleSTL
 //
 //  Created by dacuobi on 17/5/22.
-//  Copyright © 2017年 dacuobi. All rights reserved.
 //
 
 #include "simple_malloc.h"
