@@ -13,7 +13,7 @@ SimpleMalloc是一个针对于小内存（小于256字节）的内存分配管�
 SimpleMalloc 是一个具有多层次缓存的内存分配器。
 在SimpleMalloc中，内存角色按照尺寸从小到大分别是:block,pool,pond。
 
-block 是用户可以获取并自由访问的内存区域。block的大小总是8字节的整数倍,这样做是出于内存对齐的考虑。？
+block 是用户可以获取并自由访问的内存区域。block的大小总是8字节的整数倍。
 
 pool 是block的集合，相当于block的容器，每一个pool的尺寸是4k字节，即为一个内存页的大小，这可以加速系统级内存分配。
 
